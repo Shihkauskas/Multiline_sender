@@ -5,7 +5,7 @@ import socket
 try:
     with socket.socket() as sock:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.bind(('192.168.3.211', 7777))
+        sock.bind(('', 7777))
         sock.listen(socket.SOMAXCONN)
 except:
     print('Проверь клиента')
