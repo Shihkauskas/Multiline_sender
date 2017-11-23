@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
 
+from time import strftime
 import socket
 
 try:
@@ -16,5 +17,5 @@ while True:
     if not data:
         break
     print(data.decode('utf8'))
-    with open(strftime('%Y%m%d_%H%M%S')+'txt', 'w') as file:
+    with open(strftime('%Y%m%d_%H%M%S')+'.txt', 'w') as file:
         file.write(data.decode('utf8'))
