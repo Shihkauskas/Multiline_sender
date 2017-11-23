@@ -1,7 +1,7 @@
 
 import socket
 try:
-    with socket.create_connection(('192.168.3.173', 7777)) as sock:
+    with socket.create_connection(('', 7777)) as sock:
         multiline_text = []
         while True:
             text = input()
