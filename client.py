@@ -1,5 +1,7 @@
+# -*- coding: UTF-8 -*-
 
 import socket
+
 try:
     with socket.create_connection(('', 7777)) as sock:
         multiline_text = []
