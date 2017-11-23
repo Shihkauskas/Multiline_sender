@@ -16,5 +16,5 @@ while True:
     if not data:
         break
     print(data.decode('utf8'))
-    with open('text.txt', 'w') as file:
+    with open(strftime('%Y%m%d_%H%M%S')+'txt', 'w') as file:
         file.write(data.decode('utf8'))
